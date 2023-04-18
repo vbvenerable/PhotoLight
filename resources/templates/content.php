@@ -77,23 +77,22 @@ if(count($folders) > 0){
 if(count($files) > 0){ 
 	echo "<div id='thumbs'>\n";
 	foreach ($files as $file){
-		if (substr($file, -4) !== ".png") {
-        		continue;
-    		}
-		$f = a2r($file,$config['path']);
-		$name = nice($file);
-		
-		$new_file = "";
-		foreach($new as $n){
-			$a = $n;
-			$b = realpath($file);
-			if(is_inside($b,$a)){
-				$new_file = "new";
-				break;
+		if(preg_match('/\.(png|jpe?g|JPEG)$/i', $file)){
+			$f = a2r($file,$config['path']);
+			$name = nice($file);
+
+			$new_file = "";
+			foreach($new as $n){
+				$a = $n;
+				$b = realpath($file);
+				if(is_inside($b,$a)){
+					$new_file = "new";
+					break;
+				}
 			}
+
+			echo "<div class='thumb $new_file'><a href=\"?i=$f\"><img src=\"?t=$f\"></a></div>\n";
 		}
-		
-		echo "<div class='thumb $new_file'><a href=\"?i=$f\"><img src=\"?t=$f\"></a></div>\n";
 	}
 	echo "</div>\n";
 }
