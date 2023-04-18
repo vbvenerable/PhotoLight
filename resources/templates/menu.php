@@ -40,7 +40,7 @@ if( count($menu_items)>0 && $dir != $config["path"] ){
 
 echo "<div class='menu_title'>Main</div>";
 
-echo "<div class='menu_item'><a href='.'>Home</a></div>";
+echo "<div class='menu_item'><a href='.'>Erotic Emporium</a></div>";
 
 $menu_items = list_dirs($config["path"]);
 foreach ($menu_items as $it){
