@@ -41,5 +41,5 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="public_html/css/main.css" />
 	
-	<title>PhotoLight</title> 
+	<title>Erotic Emporium</title> 
 </head>
