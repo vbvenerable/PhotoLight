@@ -32,8 +32,8 @@
 	Configuration array
 */
 $config = array(
-	"path" => "../photos/",
-	"thumbs_path" => "../thumbs/"
+	"path" => "/content/ComfyUI/output",
+	"thumbs_path" => "/content/ComfyUI/output"
 );
 
 
