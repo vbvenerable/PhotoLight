@@ -32,7 +32,7 @@ $breadcrumbs = breadcrumbs(a2r($dir,$config["path"]));
 
 $url = "?f=.";
 echo "<div class='content_title'>";
-echo "<a href='.'>Home</a>";
+echo "<a href='.'>Erotic Emporium</a>";
 foreach ($breadcrumbs as $b){
 	$url = $url."/".$b;
 	echo " > <a href=\"$url\">$b</a></li>";
