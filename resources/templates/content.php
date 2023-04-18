@@ -77,6 +77,9 @@ if(count($folders) > 0){
 if(count($files) > 0){ 
 	echo "<div id='thumbs'>\n";
 	foreach ($files as $file){
+		if (substr($file, -4) !== ".png") {
+        		continue;
+    		}
 		$f = a2r($file,$config['path']);
 		$name = nice($file);
 		
